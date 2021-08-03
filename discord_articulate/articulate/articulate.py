@@ -5,12 +5,14 @@ import os
 from discord.ext import commands
 from dotenv import load_dotenv
 
+'''
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
 nltk.download('vader_lexicon')
+'''
 
 bot = commands.Bot(command_prefix='!')
-sia = SentimentIntensityAnalyzer()
+#sia = SentimentIntensityAnalyzer()
 
 load_dotenv()
 token = os.environ.get("token")
